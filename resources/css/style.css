@@ -71,6 +71,72 @@ header .flex {
   margin: auto;
 }
 
+.icons {
+  display: flex;
+  justify-content: center;
+  font-family: Helvetica;
+  font-size: 1rem
+
+}
+
+.icon {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  margin: 3rem;
+  width: 5rem;
+  height: 8rem;
+}
+
+.icon img.paper {
+  width: 3.5rem;
+}
+
+.icon img {
+  width: 5rem;
+  margin-bottom: 1rem;
+}
+
+.info-container {
+  display: flex;
+  justify-content: center;
+  margin: auto;
+  max-width: 960px;
+}
+
+.info {
+  width: 35%;
+  margin-right: 5%;
+  margin-bottom: 5rem;
+}
+
+.title {
+  background-color: cadetblue;
+  font-weight: bold;
+  color: white;
+  max-width: 10rem;
+  padding: 0.5rem 1.25rem;
+}
+
+.info p {
+  padding: 1rem 0px;
+}
+
+footer {
+  background-color: azure;
+  display: flex;
+  align-items: center;
+  padding: 4rem;
+}
+
+footer img {
+  height: 1.5rem;
+  margin-right: 1rem;
+  margin-left: 4rem;
+}
+
 @media only screen and (max-width 1024px) {
   .headline {
     margin-top: 5rem;
@@ -86,24 +152,13 @@ header .flex {
     padding-top: 0px;
     height: 22rem;
   }
+  .headline h1 {
+    font-size: 1.33rem;
+  }
 }
 
 @media only screen and (max-width: 700px) {
-  .headline {
-    margin-top: 9rem;
-    margin-right: 0rem;
-    padding: 1rem auto;
-  }
-  h1 {
-    font-family: Helvetica;
-    font-weight: bold;
-    font-size: 1rem;
-  }
-  header {
-    padding-top: 0px;
-    height: 17rem;
-    background-position: 20%;
-  }
+  
   .mobile {
     display: block;
   }
@@ -113,4 +168,63 @@ header .flex {
   .name {
     display: none;
   }
+}
+
+@media only screen and (max-width: 560px) {
+  .icons {
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    margin-top: 3.77rem;
+  }
+  .icon {
+    height: auto;
+    font-size: 0.77rem;
+    font-family: helvetica;
+  }
+  header {
+    height: 17rem;
+    background-position: 20% center;
+  }
+  .headline h1 {
+    font-size: 1rem;
+  }
+  h1 {
+    font-family: Helvetica;
+    font-weight: bold;
+    font-size: 1rem;
+  }
+  .headline {
+    width: 100%;
+    text-align: center;
+    padding: 0px 1rem;
+    margin: 9rem auto 0px;
+  }
+  .info {
+    width: auto;
+  }
+  .info .title {
+    width: 100%;
+    max-width: 100%;
+    text-align: center;
+  }
+  .info p {
+    font-size: 0.77rem;
+    font-family: helvetica;
+    padding-top: 1rem;
+    padding-bottom: 4rem;
+  }
+  .info-container {
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    margin-top: 3.77rem;
+  }
+  footer {
+    justify-content: center;
+  }
+  footer span {
+    display: none;
+  }
+
 }
